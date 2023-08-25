@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FundooNotes Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/SignUpPage.css">
+    <script src="../Javascript/SignUpPage.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="signup-container">
+        <div class="Left">
+            <img src="../Assets/colorful.PNG" alt="logo" width="250px" height="40px">
+            <h3>Create your FundooNotes account</h3>
+            <form id="form-1" action="#" method="post">
+                <div class="name-container">
+                    <div class="FstName">
+                        <input type="text" id="firstName" placeholder="First Name">
+                        <div class="emptyerror" id="firstN"></div>
+                    </div>
+                    <div class="LstName">
+                        <input type="text" id="lastName" placeholder="Last Name">
+                        <div class="emptyerror" id="lastN"></div>
+                    </div>
+                </div>
+                <div class="email-container">
+                    <input type="email" id="email" placeholder="example@gmail.com">
+                    <div class="emptyerror" id="Emerror"></div>
+                </div>
+                <div class="password-container">
+                    <div class="password">
+                        <input type="password" id="password" placeholder="Password">
+                        <div class="emptyerror" id="pass"></div>
+                    </div>
+                    <div class="confirmPass">
+                        <input type="password" id="compass" placeholder="Confirm Password">
+                        <div class="emptyerror" id="confirm"></div>
+                    </div>
+
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p class="login-link">Already have an account? <a href="#">Log In</a></p>
+        </div>
+        <div class="Right">
+            <div class="Right_image">
+                <img src="../Assets/google-one-account-1200x745.jpg" width="250px" height="130px">
+            </div>
+            <div class="Right_text">
+                <p id="text1"> One Account All of Google Working For You</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+</html>
