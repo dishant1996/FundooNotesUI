@@ -3,7 +3,7 @@ window.onload = function () {
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         let Username = document.getElementById('Username').value
-        let Password = document.getElementById('Password').value
+        let Password = document.getElementById('PasswordBlock').value
         if (Username === "") {
             document.getElementById('Uerror').innerHTML = "Username field is required"
         }
@@ -26,8 +26,8 @@ window.onload = function () {
             success: function (result) {
                 console.log("Login Successfully")
                 console.log(result);
-                // let token = result.data;
-                // localStorage.setItem('token', token);
+                let token = result.token;
+                localStorage.setItem('token', token);
                 // window.location.href = 'http://127.0.0.1:5500/pages/dashboard.html'
             }
         })

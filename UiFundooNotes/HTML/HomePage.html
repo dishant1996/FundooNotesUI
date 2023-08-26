@@ -15,8 +15,8 @@
     <div class="body-container">
         <header class="Header-container">
             <div class="Left">
-                <img src="../Assets/newthreeee.png" alt="main menu" width="40px" height="40">
-                <img id=imgf src="../Assets/a/homepagefnlogo.png" alt="main menu" width="40px" height="40">
+                <img id=imgNew src="../Assets/newthreeee.png" alt="main menu" width="40px" height="40">
+                <img id=imgKeep src="../Assets/a/logo-google-keep.png" alt="main menu" width="90px" height="40px">
             </div>
             <div class=" search-outer">
                 <div class="search-container">
@@ -37,28 +37,65 @@
         <hr style="border: 1px solid #6e6f72; margin: 10px 0;">
         <div class="main">
             <div class="leftNavbar">
-                <div class="note1">
-                    <img id="noteIcon" src="../Assets/home page/note icon.jfif" alt="">
-                    <h2 id="noteH">Notes</h2>
+                <div class=above>
+                    <div class="note1">
+                        <img id="noteIcon" src="../Assets/a/notes.png" alt="">
+                        <h2 id="noteH">Notes</h2>
+                    </div>
+                    <div class="rem">
+                        <img id="remiIcon" src="../Assets/a/download (333).png" alt="">
+                        <h2 id="remH">Reminder</h2>
+                    </div>
+                    <div class="arc">
+                        <img id="arciveIcon" src="../Assets/a/download.png" alt="">
+                        <h2 id="archiveH">Archieve</h2>
+                    </div>
+                    <div class="bin">
+                        <img id="binIcon" src="../Assets/a/bin (1).png" alt="">
+                        <h2 id="binH">Bin</h2>
+                    </div>
                 </div>
-                <div class="rem">
-                    <img id="remiIcon" src="../Assets/home page/reminder.jfif" alt="">
-                    <h2 id="remH">Reminder</h2>
+                <div class="below">
                 </div>
-                <div class="arc">
-                    <img id="arciveIcon" src="../Assets/home page/archive.jfif" alt="">
-                    <h2 id="archiveH">Archive</h2>
+            </div>
+            <div class="note-container">
+                <div class="noteBar">
+                    <div id="noteMain"> Take a note.... </div>
+
+                    <div class="title ">
+                        <input type="text" id="title1" placeholder="Title">
+                        <textarea id="desc" placeholder="Description"></textarea>
+                        <!-- <input type="text"  placeholder="dec" > -->
+                        <div class="addNote">
+                            <button onclick="addNote()" type="submit">Add Note</button>
+                        </div>
+
+                    </div>
+
                 </div>
-                <div class="bin">
-                    <img id="binIcon" src="../Assets/home page/delete.jfif" alt="">
-                    <h2 id="binH">Bin</h2>
+                <div class="Show">
+                    <div class="top">
+                        <div id="titleNote">
+                            <h3>Title</h3>
+
+                        </div>
+                        <div id="DescNote">
+                            <h3> Description</h3>
+                        </div>
+                    </div>
+                    <div class="IconNotes">
+                        <img id="NotesarciveIcon" src="../Assets/a/download.png" alt="">
+                        <img id="NotesbinIcon" src="../Assets/a/bin (1).png" alt="">
+                    </div>
                 </div>
 
+
             </div>
-            <div class="note-container"></div>
+
         </div>
 
     </div>
+
 
 
 </body>

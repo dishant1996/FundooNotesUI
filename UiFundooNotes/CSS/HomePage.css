@@ -1,13 +1,11 @@
 /* Reset some default styling */
-body, h1, h2, h3, p, img {
-    margin: 0;
-    padding: 0;
-}
 .body-container {
     /* padding: 20px; */
     height: 100vh;
     width: 100vw;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Apply styles to the header container */
@@ -15,62 +13,91 @@ body, h1, h2, h3, p, img {
     background-color: #ffffff;
     color: white;
     display: flex;
+
     justify-content: space-between;
     align-items: center;
     /* padding: 10px; */
-    border: 2px solid green;
-    height: 10%;
+    /* border: 2px solid green; */
+    height: 7%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
-.Left{
+.Left {
     display: flex;
     flex-direction: row;
     width: 25%;
-    border: 2px solid rgb(231, 247, 14);
+    /* border: 2px solid rgb(231, 245, 38); */
 
 }
+
 .Left img {
     margin-right: 10px;
     width: 12%;
     /* border: 2px solid rgb(214, 72, 120); */
 }
-#imgf {
+
+/* #imgf {
     margin-right: 10px;
     width: 75%;
-    height: 60%;
+    height: %;
     margin-top: 1%;
+    border: 2px solid rgb(214, 72, 120);
+} */
+#imgNew {
+    /* border: 2px solid rgb(38, 245, 159); */
+    height: 15%;
+    width: 15%;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+#imgKeep {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    height: 35px;
+    width: 50%;
+    margin-top: 10px;
+    /* border: 2px solid rgb(34, 168, 79); */
+
+
+}
+
+.search-outer {
+    width: 40%;
     /* border: 2px solid rgb(214, 72, 120); */
-}
-
-.search-outer{
-  width: 35%;
-  border: 2px solid rgb(214, 72, 120);
+    height: 70%;
 
 }
+
 .search-container {
     display: flex;
-    width: 85%;
+    width: 100%;
+    height: 70%;
     align-items: center;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 5px;
-    margin-right:20% ;
+    margin-right: 20%;
     border: 1px solid rgb(231, 231, 231);
     background-color: #fcf9f9;
     justify-content: space-between;
-    border: 2px solid brown;
+    /* border: 2px solid brown; */
 }
 
 .Search {
     border: none;
-    padding: 5px;
+    /* padding: 5px; */
     outline: none;
     /* border: 2px solid rgb(89, 69, 201); */
     width: 100%;
     height: 100%;
     color: #ccc;
     background-color: #fcf9f9;
-    
+
 }
 
 /* Style the image within the search container */
@@ -80,66 +107,85 @@ body, h1, h2, h3, p, img {
     margin-right: 5px;
     color: #ccc;
 }
-.Right{             
-    border: 2px solid rgb(53, 22, 230);
+
+.Right {
+    /* border: 2px solid rgb(53, 22, 230); */
     width: 30%;
 
 }
-#imgG{
-    
+
+#imgG {
+
     margin-bottom: 2px;
-      /* border: 2px solid rgb(89, 69, 201); */
-      cursor: pointer;
-      margin-left: 15px;
+    /* border: 2px solid rgb(89, 69, 201); */
+    cursor: pointer;
+    margin-left: 15px;
 }
 
-#imgR{
+#imgR {
 
     cursor: pointer;
-     /* border: 2px solid rgb(89, 69, 201); */
-     margin-left: 5px;
+    /* border: 2px solid rgb(89, 69, 201); */
+    margin-left: 5px;
 }
-#imgL{
-    cursor: pointer;
-     /* border: 2px solid rgb(89, 69, 201); */
-     margin-left: 15px;
-}
-#imgP                                                                                                                                                                                                                                                                                                                                                                                                                       {
 
-    cursor: pointer; 
-     /* border: 2px solid rgb(89, 69, 201); */
-     margin-left: 50px;
+#imgL {
+    cursor: pointer;
+    /* border: 2px solid rgb(89, 69, 201); */
+    margin-left: 15px;
+    /* margin-top: 10px; */
 }
-#imgD{
+
+#imgP {
 
     cursor: pointer;
-     /* border: 2px solid rgb(89, 69, 201); */
-     margin-left: 25px;
-     margin-bottom: 4px;
+    border: 2px solid rgb(89, 69, 201);
+    margin-left: 50px;
+    /* margin-top: 5px; */
 }
 
-.icon-container{
+#imgD {
 
-margin-left: 30px;
+    cursor: pointer;
+    /* border: 2px solid rgb(89, 69, 201); */
+    margin-left: 25px;
+    margin-bottom: 4px;
+}
+
+.icon-container {
+
+    margin-left: 30px;
 }
 
 
-.main{
-    border: 2px solid red;
-    width: 30%;
+.main {
+    /* border: 2px solid red; */
+    width: 100%;
     height: 90%;
     display: flex;
     flex-direction: row;
+    /* box-shadow: grey ; */
 
 }
-.leftNavbar{
+
+.leftNavbar {
     height: 100%;
-    width: 30%;
-    /* border: 2px solid red; */
+    width: 25%;
+    /* border: 2px solid rgb(30, 255, 0); */
     display: flex;
     flex-direction: column;
+
+
 }
-.note1{
+
+.above {
+    height: 50%;
+    /* border: 2px solid brown; */
+
+
+}
+
+.note1 {
     width: 100%;
     height: 20%;
     display: flex;
@@ -148,21 +194,23 @@ margin-left: 30px;
     /* border: 2px solid rebeccapurple; */
     /* justify-content: space-between; */
 }
-#noteIcon{
-   justify-content: flex-start;
-    /* border: 2px solid red; */
-    width: 15%;
-    margin: 35px;
-}
-#noteH{
-    align-items: flex-start;
-    justify-content: flex-start;
+
+
+#noteH {
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
     width: 80%;
     /* border: 2px solid gray; */
-    
-    padding: 20px;
+    /* margin-bottom: 20px; */
+    /* padding: 20px; */
+    font-family: Arial, Helvetica, sans-serif;
 }
-.rem , .arc, .bin{
+
+.rem,
+.arc,
+.bin {
+
     width: 100%;
     height: 20%;
     display: flex;
@@ -170,52 +218,213 @@ margin-left: 30px;
     justify-content: center;
     /* border: 2px solid rebeccapurple; */
 }
-#remiIcon  {
+
+#remiIcon {
     justify-content: flex-start;
     /* border: 2px solid red; */
     width: 15%;
-    margin: 35px; 
-}
-#remH  {
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 80%;
-    /* border: 2px solid gray; */
-    
-    padding: 20px;
-}
- #arciveIcon{
-    justify-content: flex-start;
-    /* border: 2px solid red; */
-    width: 15%;
-    margin: 35px; 
-}
-#archiveH{
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 80%;
-    /* border: 2px solid gray; */
-    
-    padding: 20px;
+    /* margin: 35px; */
 }
 
-#binIcon{
+#remH {
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    width: 80%;
+    /* border: 2px solid gray; */
+    /* margin-bottom: 20px; */
+    /* padding: 20px; */
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+#arciveIcon {
     justify-content: flex-start;
     /* border: 2px solid red; */
     width: 15%;
-    margin: 30px; 
-}
-#binH{
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 80%;
-    /* border: 2px solid gray; */
-    margin-left: 10px;
-    padding: 20px;
+    /* margin: 35px; */
 }
 
-.note-container{
+#archiveH {
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    width: 80%;
+    /* border: 2px solid gray; */
+    /* margin-bottom: 20px; */
+    /* padding: 20px; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#binIcon {
+    justify-content: flex-start;
+    /* border: 2px solid red; */
+    width: 15%;
+    /* margin: 35px; */
+}
+
+#binH {
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    width: 80%;
+    /* border: 2px solid gray; */
+    /* margin-bottom: 20px; */
+    /* padding: 20px; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.below {
+    height: 50%;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+
+.note-container {
     height: 100%;
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     /* border: 2px solid green; */
+}
+
+.noteBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid rebeccapurple; */
+}
+
+#noteMain {
+    width: 65%;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    height: 20%;
+    box-shadow: 10px;
+    font-size: 12px;
+    /* background: linear-gradient(gray); */
+    border: 2px solid grey;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.title {
+    width: 65%;
+    height: 80%;
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#title1 {
+    width: 95%;
+    height: 25%;
+    border: none;
+    outline: none;
+    /* border: 2px solid grey; */
+    font-size: 9px;
+    /* border-radius: 8px; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#desc {
+    width: 95%;
+    height: 50%;
+    border: none;
+    border-style: none;
+    outline: none;
+    font-size: 9px;
+    /* border: 2px solid grey; */
+    /* border-radius: 8px; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.addNote {
+    display: flex;
+    justify-content: center;
+    height: 25%;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+
+.addNote button {
+    width: 18%;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.Show {
+    margin-top: 20px;
+    height: 30%;
+    width: 25%;
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top {
+    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 100%;
+    border: 2px solid rgb(204, 40, 40);
+
+
+}
+
+#titleNote {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 2px solid grey; */
+
+
+}
+
+#DescNote {
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 2px solid grey; */
+
+
+
+}
+
+.IconNotes {
+    /* height:30%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 2px solid green;
+    /* margin-bottom: 20px; */
+
+
+}
+
+#NotesarciveIcon,
+#NotesbinIcon {
+    display: flex;
+    /* justify-content: flex-start; */
+    /* border: 2px solid red; */
+    width: 15%;
+    margin-top: 20%;
+
 }
