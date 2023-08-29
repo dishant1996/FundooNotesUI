@@ -1,14 +1,16 @@
-function deleteNote(id){
-    const Token3 = localStorage.getItem("token")
+function archievesNote(id){
+    const Token4 = localStorage.getItem("token")
         $.ajax({
-            url: `http://127.0.0.1:8000/api/note/delete/${id}`,
-            type: "DELETE",
+            url: `http://127.0.0.1:8000/api/note/archived/${id}`,
+            type: "PUT",
             headers: {
-                "Authorization": `Bearer ${Token3}`,
+                "Authorization": `Bearer ${Token4}`,
+                
               },
-           
+              
+            // data: noteData,
             success: function (result) {
-                alert("Note deleted Successfully")
+                alert("Note archieved Successfully")
                 console.log(result);
                 window.location.reload();
                 // let token = result.data;

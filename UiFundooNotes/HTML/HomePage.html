@@ -7,7 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home-Page</title>
     <link rel="stylesheet" type="text/css" href="../CSS/HomePage.css">
+    <link rel="icon" href="../Assets/tab-fotor-bg-remover-2023082623176.png" type="image/x-icon">
+
     <script src="../Javascript/HomePage.js"></script>
+    <script src="../Javascript/LogoutProfile.js"></script>
+    <script src="../Javascript/TakeNote.js"></script>
+    <script src="../Javascript/DeleteNote.js"></script>
+    <script src="../Javascript/ArchieveNotes.js"></script>
+    <!-- <script src="../Javascript/DeleteNote.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
@@ -30,11 +37,18 @@
                     <img id=imgL src="../Assets/a/list.png" alt="main menu" width="30px" height="30px">
                     <img id=imgG src="../Assets/a/gearre.png" alt="main menu" width="27px" height="27px">
                     <img id=imgD src="../Assets/a/dots12.png" alt="main menu" width="25px" height="25px">
-                    <img id=imgP src="../Assets/a/propic.png" alt="main menu" width="37px" height="37px">
+                    <!-- <div class="ProfileLogout"> -->
+                        <img id=imgP src="../Assets/a/propic.png" alt="main menu" width="37px" height="37px">
+                        <div class="dropdown-content" id="RightNav">
+                            <!-- <a href="#">Profile</a> -->
+                            <a href="#" id="logoutBar">Log Out</a>
+                        </div>
+
+                    <!-- </div> -->
+
                 </div>
             </div>
         </header>
-        <hr style ="border: 1px solid #ebebeb; margin: 10px 0; box-shadow: 1px 1px 1px rgb(194, 186, 186)" />
         <div class="main">
             <div class="Navigatn">
                 <div class=above>
@@ -60,7 +74,7 @@
             </div>
             <div class="note-container">
                 <div class="noteBar">
-                    <div id="noteMain"> Take a note.... </div>
+                    <!-- <div id="noteMain"> Take a note.... </div> -->
 
                     <div class="title ">
                         <input type="text" id="title1" placeholder="Title">
@@ -73,22 +87,8 @@
                     </div>
 
                 </div>
-                <div class="Show">
-                    <div class="top">
-                        <div id="titleNote">
-                            <h3>Title</h3>
-
-                        </div>
-                        <div id="DescNote">
-                            <h3> Description</h3>
-                        </div>
-                    </div>
-                    <div class="IconNotes">
-                        <img id="NotesarciveIcon" src="../Assets/a/download.png" alt="">
-                        <img id="NotesbinIcon" src="../Assets/a/bin (1).png" alt="">
-                    </div>
-                </div>
-
+                <div id="newNote"></div>
+               
 
             </div>
 

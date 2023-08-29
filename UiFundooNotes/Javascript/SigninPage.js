@@ -24,11 +24,11 @@ window.onload = function () {
             type: "POST",
             data: allData,
             success: function (result) {
-                console.log("Login Successfully")
+                alert("Login Successfully")
                 console.log(result);
                 let token = result.token;
                 localStorage.setItem('token', token);
-                // window.location.href = 'http://127.0.0.1:5500/pages/dashboard.html'
+                window.location.href = 'http://127.0.0.1:5500/HTML/HomePage.html'
             }
         })
 
